@@ -181,10 +181,12 @@ cat >/root/.gitconfig <<'EOF'
     commitEncoding = UTF-8
 [core]
     editor = vim
-    autocrlf = input
+    autocrlf = false
     quotepath = false
 [push]
     default = current
+[safe]
+    directory = *
 [alias]
     lg = log --graph --format=format:'%C(cyan)[%ai]%C(reset) %C(bold blue)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(bold red)%an%C(reset) %C(white)%s%C(reset) %C(bold yellow)%d%C(reset)'
     st = status 
